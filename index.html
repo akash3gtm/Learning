@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>To Do List</title>
+    </head>
+    <body>
+        <header>
+            <h1>Tasks</h1>
+            <form id = "new-task-form">
+                <input
+                    type="text"
+                    placeholder="What you wanna do?"
+                    id="new-task-input"
+                    name="new-task-input"
+                />
+                <input
+                    type = "submit"
+                    id = "new-task-submit"
+                    value="add task"
+                />
+            </form>
+        </header>
+        <main>
+            <section class="task-list">
+                <h2>To Do List</h2>
+                <div id="task">
+                    <!--
+                    <div class="tasks">
+                        <div class="content">
+                            <input
+                                type="text"
+                                class="text"
+                                /*value="....."*/
+                                readonly
+                            />
+                        </div>
+                        <div class="actions">
+                            <button class = "edit">Edit</button>
+                            <button class = "completed">Completed</button>
+                        </div> 
+                    </div>
+-->
+                </div>
+            </section>
+
+            <section class="task-completed">
+                <h2>Tasks Completed</h2>
+                <div id="tasks">
+                    
+                    <!-- <div class="tasks">
+                        <div class="content">
+                            <input
+                                type="text"
+                                class="text"
+                                /*value="....."*/
+                                readonly
+                            />
+                        </div>
+                        <div class="actions">
+                            <button class = "delete">Delete</button>
+                        </div> 
+                    </div>
+                -->
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer>
+        <h2>
+            Reference : 
+        </h2>
+        <ul>
+            <li><a href="https://www.w3.org/">W3C</a></li>
+            <li><a href="https://www.w3.org/">Wiki</a></li>
+            <li><a href="https://www.w3.org/">Youtube</a></li>
+        </ul>
+    </footer>
+    <script src = "main.js" > </script>
+</html> 
