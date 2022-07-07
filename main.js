@@ -46,7 +46,6 @@ window.addEventListener('load', () => {
                 list_el.removeChild(tasks_el);
             }
         })
-
     })
 })
 
