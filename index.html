@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+  </head>
+  <body>
+    <form id="RegistrationData">
+
+      <table>
+        <tr>
+          <td class="left">User ID :</td>
+          <td class="right">
+            <input
+              type="text"
+              width="100"
+              minlength="5"
+              maxlength="12"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="left">Password :</td>
+          <td class="right">
+            <input
+            type="password"
+            minlength="7"
+            maxlength="12"
+            required />
+          </td>
+        </tr>
+        <tr>
+          <td class="left">Name :</td>
+          <td class="right">
+            <input
+            type="text"
+            pattern="[A-Za-z]{*}"
+            size="50"
+            required />
+          </td>
+        </tr>
+        <tr>
+          <td class="left">Address :</td>
+          <td class="right"><input type="text" size="50" /></td>
+        </tr>
+        <tr>
+          <td class="left">Country :</td>
+          <td class="right">
+            <select name="Country" required>
+              <option value="none" selected disabled hidden>
+                (Please select a country)
+              </option>
+              <option value="India">India</option>
+              <option value="Angrej">Everywhere else</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="left">ZIP code :</td>
+          <td class="right"><input type="number" required /></td>
+        </tr>
+        <tr>
+          <td class="left">Email :</td>
+          <td class="right"><input
+            type="email"
+            size="50"
+            required /></td>
+        </tr>
+        <tr>
+          <td class="left">SEX :</td>
+          <td class="right">
+            <input type="radio"
+            id="male"
+            name="sex"
+            value="male"
+            required
+            /> Male
+            <input
+              type="radio"
+              id="female"
+              name="sex"
+              value="female"
+              required
+            /> Female
+          </td>
+        </tr>
+        <tr>
+          <td class="left">Language :</td>
+          <td class="right">
+            <input
+              type="checkbox"
+              id="Language1"
+              name="Language1"
+              value="english"
+              required
+            />
+            English
+            <input
+              type="checkbox"
+              id="Language2"
+              name="Language2"
+              value="Non-english"
+              required
+            />
+            Non-English
+          </td>
+        </tr>
+        <tr>
+          <td class="left">About :</td>
+          <td class="rightOne"><textarea
+            name="about"
+            id="about"
+            ></textarea>
+        </td>
+        </tr>
+      </table>
+      <input id = "sub"
+        type="submit"
+        value="submit"
+      />
+    </form>
+  </body>
+</html>

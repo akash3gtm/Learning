@@ -1,0 +1,23 @@
+.left{
+    text-align : right;
+}
+.right{
+    padding-left: 10px;
+}
+
+.rightOne{
+    padding-left: 10px;
+    width: max-content;
+}
+
+.rightOne textarea{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#sub{
+    margin: 50px 100px;
+    width: 100px;
+}
