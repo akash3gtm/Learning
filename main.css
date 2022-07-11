@@ -1,11 +1,11 @@
 html{
-    height: 130%;
-}
-body {
     background-color: black;
-    height: 100%;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
 header{
     background-color: rgb(239, 192, 20);
     height: 60px;
