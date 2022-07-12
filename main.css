@@ -1,0 +1,114 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+html{
+    background-color: white;
+    height: 96.4%;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+body{
+    height: 100%;
+    margin-top: 0px;
+    bottom: 0;
+}
+
+.home{
+    height: 100%;
+    margin: 30px 30px 0px 30px;
+    display: flex;
+}
+
+.left{
+    width: 28%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2144091386554622) 0%,rgba(255,255,255,0) 10%), linear-gradient(90deg, rgba(0,0,0,0.1) 0%,rgba(255,255,255,0) 10%);
+    z-index: 2;
+}
+
+.pic img{
+    position: absolute;
+    width: 100%;
+    bottom: -14%;
+    
+}
+
+#nav-box{
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+    background: white;
+    box-shadow: 60px -60px 30px -50px rgba(0,0,0,0.29);
+}
+
+#nav{
+    margin: 5% 10% 0 10%;
+}
+
+#nav h2{
+    color:rgb(169, 189, 126);
+    background: rgb(245, 249, 235);
+    padding: 5px;
+    text-align: left;
+    border-top: 1px dotted rgb(229, 177, 98);
+    border-bottom: 1px dotted rgb(229, 177, 98);
+    margin-bottom: 20px;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li{
+    padding: 15px 20px 13px 20px;
+    background: linear-gradient(180deg, rgba(251,249,243,1) 10%, rgba(242,236,222,1) 90%);
+    display: flex;
+}
+
+.arrowbox{
+    margin-right: 0px;
+    flex: 0.2;
+}
+
+.arrow {
+    border: solid rgba(169, 189, 126,0.3);
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-45deg);
+}
+
+.nav-list li .word{
+    flex: 0.8;
+    padding-top: 2.5%;
+    text-decoration: none;
+    color: rgb(169, 189, 126);
+    vertical-align: text-top;
+    vertical-align: middle;
+}
+
+.right{
+    width: 72%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+.heading{
+    width: 100%;
+    height: 33%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2144091386554622) 0%,rgba(255,255,255,0) 15%);
+    border: 1px solid red;
+}
