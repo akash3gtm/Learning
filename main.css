@@ -18,7 +18,8 @@ body{
 
 .home{
     height: 100%;
-    margin: 30px 30px 0px 30px;
+    margin: 2% 2% 0 2%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2144091386554622) ,rgba(255,255,255) 5%);
     display: flex;
 }
 
@@ -33,23 +34,22 @@ body{
     position: relative;
     height: 50%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(0,0,0,0.2144091386554622) 0%,rgba(255,255,255,0) 10%), linear-gradient(90deg, rgba(0,0,0,0.1) 0%,rgba(255,255,255,0) 10%);
-    z-index: 2;
+    background: linear-gradient(90deg, rgba(0,0,0,0.1) 0%,rgba(255,255,255,0) 7%);
+    z-index: 3;
 }
 
 .pic img{
     position: absolute;
     width: 100%;
     bottom: -14%;
-    
 }
 
 #nav-box{
     height: 50%;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     background: white;
-    box-shadow: 60px -60px 30px -50px rgba(0,0,0,0.29);
+    box-shadow: 53px -53px 10px -50px rgba(81, 81, 81, 0.29);
 }
 
 #nav{
@@ -59,11 +59,11 @@ body{
 #nav h2{
     color:rgb(169, 189, 126);
     background: rgb(245, 249, 235);
-    padding: 5px;
+    padding: 3%;
     text-align: left;
     border-top: 1px dotted rgb(229, 177, 98);
     border-bottom: 1px dotted rgb(229, 177, 98);
-    margin-bottom: 20px;
+    margin-bottom: 6%;
 }
 
 .nav-list{
@@ -83,10 +83,10 @@ body{
 
 .arrow {
     border: solid rgba(169, 189, 126,0.3);
-    border-width: 0 10px 10px 0;
+    border-width: 10px 10px 0 0;
     display: inline-block;
     padding: 10px;
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
 }
 
 .nav-list li .word{
@@ -103,12 +103,206 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid blue;
 }
 
 .heading{
     width: 100%;
     height: 33%;
-    background: linear-gradient(180deg, rgba(0,0,0,0.2144091386554622) 0%,rgba(255,255,255,0) 15%);
-    border: 1px solid red;
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 53px 53px 10px -50px rgba(81, 81, 81, 0.29);
+}
+
+
+.quotebox{
+    flex: 0.47;
+    padding-right: 5px;
+    background: white;
+    display: flex;
+}
+
+.quote{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #eaf4db,rgba(255,255,255,0) 100%);
+    font-style: italic;
+}
+
+.quote h1{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 25%;
+    font-size: 3rem;
+}
+
+#deli{
+    color: #87a448;
+    margin-right: 10px;
+}
+
+#fr{
+    color: rgb(142, 78, 0);
+}
+
+#tastes{
+    position: absolute;
+    color: rgb(187, 138, 48);
+    bottom: 30%;
+    right: 5%;
+    font-size: 1.125rem;
+}
+
+.login{
+    flex: 0.45;
+    background-image: linear-gradient( rgba(250, 226, 168, 0.85)  , white), url(login-bg.jpeg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.login-area{
+    width: 60%;
+    height: 80%;
+    text-align: justify;
+    font-size: 1.125rem;
+    margin: 5% 0%;
+}
+
+.login-area a{
+    text-decoration: none;
+    color: #87a448;
+}
+
+.input{
+    margin-top: 5%;
+    font-size: 20px;
+    color: #a6b789;
+}
+
+.input input[type=text], input[type=password]{
+    width: 100%;
+    margin-bottom: 5px;
+    line-height: 1.6rem;
+    border: 1px solid white;
+    box-shadow: inset -75px -75px 10px -73px rgba(0,0,0,0.09);
+    background-color: rgba(235, 246, 216, 0.4);
+}
+
+.input input[type=submit]{
+    margin: 4% 0 0 81%;
+    font-size: 1.1rem;
+    width: 20%;
+    line-height: 1.6rem;
+    border: 1px solid white;
+    box-shadow: inset -75px -75px 10px -73px rgba(0,0,0,0.09);
+    background-color: rgba(235, 246, 216, 0.4);
+}
+
+.right-side{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 100%;
+}
+
+.corner-pic img{
+    position: absolute;
+    width: 100%;
+    top: -10%;
+    right: -20%;
+}
+
+.circle{
+    position: absolute;
+    width: 25%;
+    height: 8%;
+    bottom: 3%;
+    right: 9%;
+    border: 1px solid grey;
+    border-width: 2px;
+    border-radius: 100%;
+}
+
+.details{
+    flex-direction: row-reverse;
+    margin-top: 7%;
+    height: 60%;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 53px -53px 10px -50px rgba(81, 81, 81, 0.29);
+}
+
+.details-box{
+    margin: 2.5% 5%;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    flex: 0.17;
+    width: 100%;
+    border-bottom: dotted 1px lightgray;
+    display: flex;
+}
+
+.date-img{
+    position: relative;
+    flex: 10%;
+}
+
+.date-img img{
+    position: absolute;
+    height: 90%;
+}
+
+.title-text{
+    flex: 80%;
+    position: relative;
+}
+
+.title-text h1{
+    position: absolute;
+    color: #87a448;
+    bottom: 0;
+    font-style: italic;
+    padding-bottom: 2%;
+}
+
+.content{
+    position: relative;
+    flex: 0.83;
+    width: 100%;
+}
+
+.lemon{
+    margin: 30px 30px 0 0;
+    height: auto;
+    float: right;
+    padding-left: 10px;
+}
+
+.lemon img{
+    height: 150px;
+    border: 5px solid white;
+    box-shadow: 53px 53px 10px -50px rgba(81, 81, 81, 0.29), -53px -53px 10px -50px rgba(81, 81, 81, 0.29);
+}
+
+.content p{
+    margin-top: 25px;
+}
+
+.content p a{
+    color: #89a36e;
+    text-decoration: none;
+}
+
+.further-reading{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    color: #87a448;
+    font-style: italic;
 }
