@@ -1,0 +1,19 @@
+#grandpa{
+    height: 500px;
+    width: 500px;
+    border: 1px solid yellow;
+}
+
+#dad{
+    border: 1px solid green;
+    margin: 50px;
+    height: 400px;
+    width: 400px;
+}
+
+#kid{
+    border: 1px solid greenyellow;
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+}
