@@ -9,7 +9,7 @@
 <body>
 
     <form action="submit.php" method="post">
-        Enter your name : <input type="text" name="name">
+        Enter a number : <input type="text" name="num">
         <br>
         <input type="submit">
     </form>

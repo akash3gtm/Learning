@@ -1,7 +1,15 @@
 <html>
 <body>
 
-Welcome <?php echo $_POST["name"]; ?>, nice to meet you. I am PHP.
+Table of
+<?php
+    $n = $_POST["num"];
+    echo $n, " :<br>" ;
+    for($i = 1; $i <=10; $i++)
+    {
+        echo $n, " * ", $i, " = ", $i*$n, "<br>" ;
+    }
+?>
 
 </body>
 </html>
