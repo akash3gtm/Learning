@@ -12,9 +12,4 @@ while ($row = mysqli_fetch_array($results))
     require("taskListComp.php");
     $id++;
 }
-
-// for($i = 0; $i < sizeof($_SESSION['tasksListComp']); $i++)
-// {
-//     require("taskListComp.php");
-// }
 ?>
