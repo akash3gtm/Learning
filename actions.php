@@ -1,4 +1,12 @@
 <?php
+
+if(isset($_POST['clear']))
+{
+    mysqli_query($link,"DELETE FROM tasks");
+    session_destroy();
+    header("location: index.php");
+}
+
 for($i = 0; $i < sizeof($_SESSION['tasksList']); $i++)
 {
     if( isset($_POST['edit'.(string)$i]) || isset($_POST['completed'.(string)$i]) )

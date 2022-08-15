@@ -50,16 +50,7 @@
                 <form id = "taskList" method = "post" >
 
                     <?php
-                    if(isset($_POST['addTask'])&&($_POST['newTaskInput']!=""))
-                    {
-                        $input = $_POST['newTaskInput'];
-                        array_push($_SESSION['tasksList'], $input);
-                    }
-
-                    for($i = 0; $i < sizeof($_SESSION['tasksList']); $i++)
-                    {
-                        require("createTaskList.php");
-                    }
+                    require("createTasklist.php");
                     ?>
 
                 </form>
@@ -71,17 +62,7 @@
 
                     <?php
 
-                    if(isset($_POST['clear']))
-                    {
-                        session_destroy();
-                        header("location: index.php");
-                    }
-                    
-                    for($i = 0; $i < sizeof($_SESSION['tasksListComp']); $i++)
-                    {
-                        require("createTaskListComp.php");
-                    }
-
+                    require("createTaskListComp.php");
                     require("delete.php");
                     require("actions.php");
 

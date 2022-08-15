@@ -1,27 +1,20 @@
-<div class="tasks">
-    <div class="content">
-        <input
-            type = "text"
-            class = "text"
-            value = " <?php  echo $_SESSION['tasksList'][$i]; ?> "
-            readonly
-        />
+<?php
+if(isset($_POST['addTask'])&&($_POST['newTaskInput']!=""))
+{
+    $input = $_POST['newTaskInput'];
+    array_push($_SESSION['tasksList'], $input);
 
-    </div>
+    $sql = "INSERT INTO tasks (task) VALUES ('$input')";
+    mysqli_query($link, $sql);
+}
 
-    <div class="actions">
-        <button
-            type = "submit"
-            class = "edit"
-            name = "edit<?php  echo $i; ?>"
-        >EDIT</button>
-        
-        <button
-            type = "submit"
-            class = "completed"
-            name = "completed<?php  echo $i; ?>"
-        >COMPLETED</button>
-    
-    </div> 
+$results = mysqli_query($link, "SELECT * FROM tasks");
 
-</div>
+$id = 0;
+
+while ($row = mysqli_fetch_array($results))
+{
+    require("addTask.php");
+    $id++;
+}
+?>
