@@ -1,27 +1,27 @@
 <div class="tasks">
-<div class="content">
-    <input
-        type = "text"
-        class = "text"
-        value = " <?php  echo $row['task']; ?> "
-        readonly
-    />
+    <div class="content">
+        <input
+            type = "text"
+            class = "text"
+            value = " <?php  echo $row['task']; ?> "
+            readonly
+        />
 
-</div>
+    </div>
 
-<div class="actions">
-    <button
-        type = "submit"
-        class = "edit"
-        name = "edit<?php echo $id; ?>"
-    >EDIT</button>
+    <div class="actions">
+        <button
+            type = "submit"
+            class = "edit"
+            name = "edit<?php  echo $id; ?>"
+        >EDIT</button>
+        
+        <button
+            type = "submit"
+            class = "completed"
+            name = "completed<?php  echo $id; ?>"
+        >COMPLETED</button>
     
-    <button
-        type = "submit"
-        class = "completed"
-        name = "completed<?php echo $id; ?>"
-    >COMPLETED</button>
-
-</div> 
+    </div> 
 
 </div>

@@ -20,6 +20,7 @@ mysqli_query($link, $sql);
 if(!(isset($_SESSION['edit']) ) ){
     $_SESSION['edit'] = "";
 }
+
 if(!isset($_SESSION['tasksList'])){
     $_SESSION['tasksList'] = array();
 }

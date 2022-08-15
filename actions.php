@@ -12,14 +12,17 @@ for($i = 0; $i < sizeof($_SESSION['tasksList']); $i++)
     if( isset($_POST['edit'.(string)$i]) || isset($_POST['completed'.(string)$i]) )
     {
         $task = $_SESSION['tasksList'][$i];
-        array_splice($_SESSION['tasksList'], $i, 1);
+        $sql = "DELETE FROM tasks WHERE task = '$task'";
+        mysqli_query($link,$sql);
+        
         if( isset($_POST['edit'.(string)$i]) )
         {
             $_SESSION['edit']= $task;
         }
         else
         {
-            array_push($_SESSION['tasksListComp'], $task);
+            $sql = "INSERT INTO tasksComp VALUE ('$task')";
+            mysqli_query($link,$sql);
         }
         header("location: index.php");
     }

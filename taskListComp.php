@@ -3,7 +3,7 @@
         <input
             type = "text"
             class = "text"
-            value = " <?php  echo $_SESSION['tasksListComp'][$i]; ?> "
+            value = " <?php  echo $row['task']; ?> "
             readonly
         />
 
@@ -13,7 +13,7 @@
         <button
             type = "submit"
             class = "delete"
-            name = "delete<?php  echo $i; ?>"
+            name = "delete<?php  echo $id; ?>"
         >DELETE</button>
     </div> 
 
