@@ -1,0 +1,11 @@
+.left{
+    text-align : right;
+}
+.right{
+    padding-left: 10px;
+}
+
+#sub{
+    margin: 50px 100px;
+    width: 100px;
+}
