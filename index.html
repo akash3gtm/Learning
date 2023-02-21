@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.3/css/flag-icons.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <input type="checkbox" name="menu-chkbx" id="menu-chkbx">
+        <div class="nav-container">
+            <h1>GeekyAnts</h1>
+            <h3>MAIN</h3>
+            <ul style="list-style-type: none; padding-left:0px">
+                <li class = "is-active">
+                    <a href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;Dashboard</a>
+                    <span class="badge rounded-pill float-end" style="background:#606ed8;">2</span>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-calendar"></i>&nbsp;&nbsp;&nbsp;Calendar</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</a>
+                    <span class="arrow-right"style="float:right;margin-top:.8rem;"></span>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-box-open"></i>&nbsp;&nbsp;&nbsp;UI Elements</a>
+                    <span class="arrow-right"style="float:right;margin-top:.8rem;"></span>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-file-lines"></i>&nbsp;&nbsp;&nbsp;Forms</a>
+                    <span class ="badge rounded-pill float-end" style="background:#2AA39A;">9</span>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-chart-pie"></i>&nbsp;&nbsp;&nbsp;Charts</a>
+                    <span class="arrow-right"style="float:right;margin-top:.8rem;"></span>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-table-cells-large"></i></i>&nbsp;&nbsp;&nbsp;Tables</a>
+                    <span class="arrow-right"style="float:right;margin-top:.8rem;"></span>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-face-smile"></i>&nbsp;&nbsp;&nbsp;Icons</a>
+                    <span class="arrow-right"style="float:right;margin-top:.8rem;"></span> 
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;Maps</a>
+                    <span class="badge rounded-pill float-end" style="background:#f24c6c;">2</span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="header-container">
+            <div class="menu-container">
+                <label for = "menu-chkbx" class = "fa-solid fa-bars menu-btn"></label>
+                <span class = "create-btn center-vertically">Create&nbsp;<i class="fa-solid fa-caret-down"></i></span>
+            </div>
+            <div class="profile-container">
+                <div class="left-header-items">
+                    <label class = "search-icon"for="search"><i class = "fa-solid fa-search"></i></label>
+                    <input type="text" placeholder = "&nbsp;&nbsp;&nbsp;Search.."name="search" id="search">
+                    <span class=" flag-icon fi fi-us" style="font-size: 1.3rem;"></span>
+                    <span class = "lang-btn">&nbsp;&nbsp;&nbsp;English&nbsp;<i class="fa-solid fa-caret-down"></i></span>
+                    <span style="font-size: 1.5rem; margin-left: 3rem; color: var(--header-color);"class = "fullscreen-icon fa-solid fa-expand"></span>
+                    <span style="font-size: 1.8rem; margin-left: 3rem; color: var(--header-color);"class="fa-regular fa-bell bell-icon"></span>
+                    <span class = "profile-btn"></span>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <h1>Dashboard</h1>
+                    <h2>Welcome to Veltrix Dashboard</h2>
+                </div>
+                <div class="col-6">
+                    <button class = "btn btn-primary btn-lg float-end"><i class="fa-solid fa-gear"></i>&nbsp;Settings</button>
+                </div>
+            </div>
+            <div class="row card-container">
+                <div class="col-xxl-3 col-lg-6 col-sm-12">
+                    <div class="card card-1">
+                        <div class="icon">
+                            <img src="1.png" alt="files" class="center">
+                        </div>
+                        <div class="heading">
+                            <h1 class = "title">ORDERS</h1>
+                            <h1 class = "value">1,685</h1>
+                        </div>
+                        <div class="bottom-btn">
+                            <h2><span class = "bottom-btn-text">Since last month</span><span class= "bottom-btn-arrow">&rarr;</span></h2>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-xxl-3 col-lg-6 col-sm-12">
+                    <div class="card card-2">
+                        <div class="icon">
+                            <img src="1.png" alt="files" class="center">
+                        </div>
+                        <div class="heading">
+                            <h1 class = "title">REVENUE</h1>
+                            <h1 class = "value">52,368</h1>
+                        </div>
+                        <div class="bottom-btn">
+                            <h2><span class = "bottom-btn-text">Since last month</span><span class= "bottom-btn-arrow">&rarr;</span></h2>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-xxl-3 col-lg-6 col-sm-12">
+                    <div class="card card-3">
+                        <div class="icon">
+                            <img src="2.png" alt="files" class="center">
+                        </div>
+                        <div class="heading">
+                            <h1 class = "title">AVERAGE PRICE</h1>
+                            <h1 class = "value">15.8</h1>
+                        </div>
+                        <div class="bottom-btn">
+                            <h2><span class = "bottom-btn-text">Since last month</span><span class= "bottom-btn-arrow">&rarr;</span></h2>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-xxl-3 col-lg-6 col-sm-12">
+                    <div class="card card-4">
+                        <div class="icon">
+                            <img src="1.png" alt="files" class="center">
+                        </div>
+                        <div class="heading">
+                            <h1 class = "title">PRODUCT SOI</h1>
+                            <h1 class = "value">2436</h1>
+                        </div>
+                        <div class="bottom-btn">
+                            <h2><span class = "bottom-btn-text">Since last month</span><span class= "bottom-btn-arrow">&rarr;</span></h2>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xxl-8 col-lg-12">
+                    <div class="table">
+                        <div class="og-contianer">
+                            <h1 class="heading-line">Latest Transaction</h1>
+                            <div class="og-row og-li og-li-head">
+                              <div class="og-li-col og-li-col-1">(#)Id</div>
+                              <div class="og-li-col og-li-col-2">Name</div>
+                              <div class="og-li-col og-li-col-3">Date</div>
+                              <div class="og-li-col og-li-col-4">Amount</div>
+                              <div class="og-li-col og-li-col-5">Status</div>
+                              <div class="og-li-col og-li-col-6"></div>
+                            </div>
+                            <div class="data-row og-row og-li">
+                                <div class="og-li-col og-li-col-1">#14256</div>
+                                <div class="og-li-col og-li-col-2">
+                                    <img src="personSample.jpeg" alt="person" class = "person-icon">
+                                    <span>&nbsp;Philip Samead</span>
+                                </div>
+                                <div class="og-li-col og-li-col-3">15/1/2018</div>
+                                <div class="og-li-col og-li-col-4">$94</div>
+                                <div class="og-li-col og-li-col-5"> 
+                                    <span class="badge" style="background: #2AA39A;">Delivered</span>
+                                </div>
+                                <div class="og-li-col og-li-col-6">
+                                    <a href="#" class = "btn btn-primary">Edit</a>
+                                </div>
+                            </div>
+                            <div class="data-row og-row og-li">
+                              <div class="og-li-col og-li-col-1">#14257</div>
+                              <div class="og-li-col og-li-col-2">
+                                <img src="personSample.jpeg" alt="person" class = "person-icon">
+                                <span>&nbsp;Philip Samead</span>
+                              </div>
+                              <div class="og-li-col og-li-col-3">16/1/2019</div>
+                              <div class="og-li-col og-li-col-4">$112</div>
+                              <div class="og-li-col og-li-col-5">
+                                <span class="badge" style="background: #F8B425;">Pending</span>
+                            </div>
+                              <div class="og-li-col og-li-col-6">
+                                <a href="#" class = "btn btn-primary">Edit</a>
+                              </div>
+                            </div>
+                            <div class="data-row og-row og-li">
+                              <div class="og-li-col og-li-col-1">#14258</div>
+                              <div class="og-li-col og-li-col-2">
+                                <img src="personSample.jpeg" alt="person" class = "person-icon">
+                                <span>&nbsp;Philip Samead</span>
+                              </div>
+                              <div class="og-li-col og-li-col-3">17/1/2019</div>
+                              <div class="og-li-col og-li-col-4">$116</div>
+                              <div class="og-li-col og-li-col-5">
+                                <span class="badge" style="background: #2AA39A;">Delivered</span>
+                              </div>
+                              <div class="og-li-col og-li-col-6">
+                                <a href="#" class = "btn btn-primary">Edit</a>
+                              </div>
+                            </div>
+                            <div class="data-row og-row og-li">
+                              <div class="og-li-col og-li-col-1">#14259</div>
+                              <div class="og-li-col og-li-col-2">
+                                <img src="personSample.jpeg" alt="person" class = "person-icon">
+                                <span>&nbsp;Philip Samead</span>
+                              </div>
+                              <div class="og-li-col og-li-col-3">18/1/2019</div>
+                              <div class="og-li-col og-li-col-4">$109</div>
+                              <div class="og-li-col og-li-col-5">
+                                <span class="badge" style="background: #EC4561;">Cancel</span>
+                              </div>
+                              <div class="og-li-col og-li-col-6">
+                                <a href="#" class = "btn btn-primary">Edit</a>
+                              </div>
+                            </div>
+                            <div class="data-row og-row og-li">
+                              <div class="og-li-col og-li-col-1">#14260</div>
+                              <div class="og-li-col og-li-col-2">
+                                <img src="person5.jpg" alt="person" class = "person-icon">
+                                <span>&nbsp;Philip Samead</span>
+                              </div>
+                              <div class="og-li-col og-li-col-3">19/1/2019</div>
+                              <div class="og-li-col og-li-col-4">$120</div>
+                              <div class="og-li-col og-li-col-5">
+                                <span class="badge" style="background: #2AA39A;">Delivered</span>
+                              </div>
+                              <div class="og-li-col og-li-col-6">
+                                <a href="#" class = "btn btn-primary">Edit</a>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-lg-12">
+                    <div class="chatbox">
+                        <div class="chatbox-heading">
+                            <h1>Chat</h1>
+                        </div>
+                        <div class="chatbox-grid">
+                            <div class="messages">
+                                <div class="sent-message">
+                                    <div time = "10:00"class="chat-icon-1">
+                                        
+                                    </div>
+                                    <div class="sender-message-box">
+                                        <h2>John Doe</h2>
+                                        <p>Hello!</p>
+                                    </div>
+                                </div>
+                                <div class="received-message">
+                                    <div time = "10:01"class="chat-icon-2"></div>
+                                    <div class="receiver-message-box">
+                                        <h2>Smith</h2>
+                                        <p>Hi, How are you?What about our next meeting.</p>
+                                    </div>
+                                </div>
+                                <div class="sent-message">
+                                    <div time = "10:04"class="chat-icon-1">
+                                        
+                                    </div>
+                                    <div class="sender-message-box">
+                                        <h2>John Doe</h2>
+                                        <p>Yeah everything is fine</p>
+                                    </div>
+                                </div>
+                                <div class="received-message">
+                                    <div time = "10:05"class="chat-icon-2"></div>
+                                    <div class="receiver-message-box">
+                                        <h2>Smith</h2>
+                                        <p>Wow,That's great.</p>
+                                    </div>
+                                </div>
+                                <div class="received-message">
+                                    <div time = "10:06"class="chat-icon-2"></div>
+                                    <div class="receiver-message-box">
+                                        <h2>Smith</h2>
+                                        <p>I have some work for you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chatbox-tray">
+                            <input type="text" name ="message" placeholder="Enter your text" id = "message">
+                            <input type="submit" value="Send" id="send">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
